@@ -1,0 +1,18 @@
+.skeleton {
+	background-color: rgb(225, 225, 225);
+	animation-name: skeleton;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+	animation-direction: alternate;
+}
+
+@keyframes skeleton {
+	0% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}

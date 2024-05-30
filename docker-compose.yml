@@ -1,0 +1,23 @@
+# docker-compose.yml
+
+version: "3"
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextjs
+    hostname: nextsv
+    restart: always
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000
+    networks:
+      - khayati_laravel_lkapp-network
+networks:
+  khayati_laravel_lkapp-network:
+    external: true

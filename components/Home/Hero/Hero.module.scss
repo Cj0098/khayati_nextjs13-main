@@ -1,0 +1,30 @@
+.Hero {
+	display: grid;
+	grid-template-columns: minmax(1px, 1fr);
+	
+	grid-template-rows: 0.5fr 0.5fr;
+	grid-gap: 50px;
+
+	@media (min-width: 768px) {
+		grid-template-columns: minmax(1px, 2fr) minmax(1px, 1fr);
+		grid-template-rows: 1fr;
+	}
+}
+
+.HeroSliderArrow {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%);
+	background-color: #5c7dae;
+	transition-duration: 200ms;
+	&:hover {
+		background-color: hsl(216, 34%, 58%);
+	}
+}
+
+.SliderCustomDot {
+	width: 30px;
+	height: 8px;
+	background-color: #a7c0f2;
+}

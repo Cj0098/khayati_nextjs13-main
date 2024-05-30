@@ -1,0 +1,6 @@
+.VideoContainer {
+	@media (min-width: 1024px) {
+		grid-template-rows: 500px;
+		grid-template-columns: 5fr 2fr;
+	}
+}

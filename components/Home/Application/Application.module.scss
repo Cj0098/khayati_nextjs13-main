@@ -1,0 +1,12 @@
+.background {
+	background: linear-gradient(101.97deg, #ff7a7a 11.61%, #fc7bff 86.55%);
+}
+
+.wrapper {
+	@media (min-width: 576px) {
+		display: grid;
+		grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+		align-items: center;
+		justify-content: center;
+	}
+}

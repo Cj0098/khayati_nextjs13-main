@@ -1,0 +1,30 @@
+.ClassesSliderBox {
+	width: 100%;
+	max-width: 900px;
+}
+.ClassesSliderArrow {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%);
+	background-color: #0a0a0a;
+	transition-duration: 200ms;
+	&:hover {
+		background-color: hsl(0, 0%, 23%);
+	}
+}
+
+.ClassesSliderSlideTopPart {
+	display: grid;
+	grid-template-columns: minmax(1px, 1fr) minmax(1px, 3fr);
+}
+.ClassesSliderSlideBottomPart {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: minmax(1px, 1fr);
+
+	@media (min-width: 576px) {
+		gap: 0rem;
+		grid-template-columns: minmax(1px, 3fr) minmax(1px, 1fr);
+	}
+}

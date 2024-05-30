@@ -1,0 +1,8 @@
+.ProfileWrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media (min-width: 768px) {
+		grid-template-columns: 270px 1fr;
+	}
+}

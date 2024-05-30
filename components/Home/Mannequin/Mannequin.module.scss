@@ -1,0 +1,20 @@
+.mannequin {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media (min-width: 576px) {
+		grid-template-columns: minmax(1px, 1fr) minmax(1px, 4fr);
+	}
+
+	@media (min-width: 1024px) {
+		grid-template-columns: minmax(1px, 1fr) minmax(1px, 8fr);
+	}
+}
+.mannequinImage {
+	@media (min-width: 576px) {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0px;
+	}
+}

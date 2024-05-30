@@ -1,0 +1,23 @@
+.headerSearchWrapper {
+	max-width: 600px;
+}
+
+.headerSearchBox {
+	height: 38px;
+
+	@media (min-width: 1024px) {
+		height: 55px;
+	}
+		@media only screen and (max-width: 600px) {
+			width: 150px;
+		}
+}
+
+.headerSearchDropdown {
+	position: absolute;
+	top: 105%;
+	left: 0px;
+	z-index: 9;
+	width: 100%;
+	height: 180px;
+}

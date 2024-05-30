@@ -1,0 +1,11 @@
+.wrapper {
+	display: flex;
+	flex-direction: column-reverse;
+
+	@media (min-width: 576px) {
+		display: grid;
+		grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+		justify-content: center;
+		align-items: center;
+	}
+}
